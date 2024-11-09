@@ -1234,13 +1234,13 @@ const cardProbabilities = {
 
 // 抽卡池
 const allPlayers = [
-    { name: '球员E', position: 'CM', card: '铜卡', contract: 1, value: 50000, overall: 62, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 60, defense: 65, speed: 62, dribbling: 60, passing: 61 } },
-    { name: '球员F', position: 'CB', card: '银卡', contract: 1, value: 100000, overall: 70, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 65, defense: 70, speed: 68, dribbling: 65, passing: 67 } },
-    { name: '球员G', position: 'ST', card: '金卡', contract: 2, value: 250000, overall: 80, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 85, defense: 70, speed: 80, dribbling: 82, passing: 80 } },
-    { name: '球员H', position: 'GK', card: '钻石卡', contract: 3, value: 500000, overall: 88, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 50, defense: 95, speed: 70, dribbling: 65, passing: 80 } },
+    { name: '吴丞彬', position: 'CM', card: '铜卡', contract: 1, value: 50000, overall: 62, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 60, defense: 65, speed: 62, dribbling: 60, passing: 61 } },
+    { name: '崔元正', position: 'CB', card: '银卡', contract: 1, value: 100000, overall: 70, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 65, defense: 70, speed: 68, dribbling: 65, passing: 67 } },
+    { name: '刘梓州', position: 'ST', card: '金卡', contract: 2, value: 250000, overall: 80, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 85, defense: 70, speed: 80, dribbling: 82, passing: 80 } },
+    { name: '张海启', position: 'GK', card: '钻石卡', contract: 3, value: 500000, overall: 88, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 50, defense: 95, speed: 70, dribbling: 65, passing: 80 } },
     // 添加更多球员
-    { name: '球员I', position: 'RW', card: '铜卡', contract: 1, value: 50000, overall: 63, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 62, defense: 60, speed: 65, dribbling: 64, passing: 60 } },
-    { name: '球员J', position: 'LW', card: '银卡', contract: 1, value: 100000, overall: 72, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 70, defense: 65, speed: 75, dribbling: 74, passing: 70 } },
+    { name: '高常起', position: 'RW', card: '铜卡', contract: 1, value: 50000, overall: 63, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 62, defense: 60, speed: 65, dribbling: 64, passing: 60 } },
+    { name: '赵子轩', position: 'LW', card: '银卡', contract: 1, value: 100000, overall: 72, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 70, defense: 65, speed: 75, dribbling: 74, passing: 70 } },
     { name: '球员K', position: 'CM', card: '金卡', contract: 2, value: 250000, overall: 82, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 80, defense: 75, speed: 78, dribbling: 82, passing: 85 } },
     { name: '球员L', position: 'CB', card: '钻石卡', contract: 3, value: 500000, overall: 90, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 70, defense: 95, speed: 80, dribbling: 75, passing: 85 } },
     { name: '球员M', position: 'RW', card: '钻石卡', contract: 3, value: 500000, overall: 91, stamina: 100, suspended: false, yellowCards: 0, skills: [], stats: { shooting: 85, defense: 65, speed: 85, dribbling: 85, passing: 80 } },
