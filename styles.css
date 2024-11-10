@@ -282,6 +282,11 @@ body {
     .player, .transfer-player, .coach-card, .skill-card-item {
         width: 100%;
     }
+
+    /* 调整下拉菜单的宽度 */
+    .dropdown-menu {
+        width: 100%;
+    }
 }
 
 /* Modal样式调整 */
