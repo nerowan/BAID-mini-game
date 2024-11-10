@@ -15,60 +15,62 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">北中杯足球经理</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="切换导航">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="切换导航">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="team-management-btn">球队管理</a>
+                    <!-- 管理下拉菜单 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="managementDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            管理
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="managementDropdown">
+                            <li><a class="dropdown-item" href="#" id="team-management-btn">球队管理</a></li>
+                            <li><a class="dropdown-item" href="#" id="player-info-btn">球员信息</a></li>
+                            <li><a class="dropdown-item" href="#" id="transfer-market-btn">转会市场</a></li>
+                            <li><a class="dropdown-item" href="#" id="coach-market-btn">教练市场</a></li>
+                            <li><a class="dropdown-item" href="#" id="youth-academy-btn">青训</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="player-info-btn">球员信息</a>
+                    <!-- 卡片下拉菜单 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            卡片
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cardsDropdown">
+                            <li><a class="dropdown-item" href="#" id="draw-card-btn">抽取球员卡</a></li>
+                            <li><a class="dropdown-item" href="#" id="skill-card-btn">技能卡</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="transfer-market-btn">转会市场</a>
+                    <!-- 比赛下拉菜单 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="competitionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            比赛
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="competitionDropdown">
+                            <li><a class="dropdown-item" href="#" id="league-table-btn">联赛积分表</a></li>
+                            <li><a class="dropdown-item" href="#" id="match-btn">比赛</a></li>
+                            <li><a class="dropdown-item" href="#" id="tournament-system-btn">赛事系统</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="coach-market-btn">教练市场</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="draw-card-btn">抽取球员卡</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="skill-card-btn">技能卡</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="league-table-btn">联赛积分表</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="match-btn">比赛</a>
-                    </li>
+                    <!-- 训练直接作为独立项 -->
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="training-btn">训练</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="youth-academy-btn">青训</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="inbox-btn">收件箱<span id="inbox-count" class="badge bg-danger ms-1"></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="achievements-btn">成就</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="activities-btn">活动</a>
-                    </li>
-                    <!-- 新增功能菜单 -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="fan-system-btn">球迷系统</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="financial-management-btn">财务管理</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="tournament-system-btn">赛事系统</a>
+                    <!-- 其他功能下拉菜单 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="otherDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            其他
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="otherDropdown">
+                            <li><a class="dropdown-item" href="#" id="inbox-btn">收件箱<span id="inbox-count" class="badge bg-danger ms-1"></span></a></li>
+                            <li><a class="dropdown-item" href="#" id="achievements-btn">成就</a></li>
+                            <li><a class="dropdown-item" href="#" id="activities-btn">活动</a></li>
+                            <li><a class="dropdown-item" href="#" id="fan-system-btn">球迷系统</a></li>
+                            <li><a class="dropdown-item" href="#" id="financial-management-btn">财务管理</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <span class="navbar-text me-3" id="funds">资金：1000000金币</span>
