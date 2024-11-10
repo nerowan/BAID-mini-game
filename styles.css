@@ -1,0 +1,367 @@
+/* 基础样式 */
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 20px 0;
+}
+
+/* 球场样式 */
+#pitch {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #6ab150; /* 草坪绿色 */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: linear-gradient(0deg, #6ab150 50%, #6ab150 50%);
+    background-size: cover;
+    background-position: center;
+}
+
+.position-slot {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position-slot:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.player-card {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 球员、转会球员、教练卡片样式 */
+.player, .transfer-player, .coach-card, .skill-card-item {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    transition: transform 0.2s, background-color 0.2s;
+    text-align: center;
+}
+
+.player:hover, .transfer-player:hover, .coach-card:hover, .skill-card-item:hover {
+    transform: scale(1.05);
+}
+
+/* 卡片品质样式 */
+.card-bronze {
+    background-color: #cd7f32;
+}
+
+.card-silver {
+    background-color: #c0c0c0;
+    color: #000;
+}
+
+.card-gold {
+    background-color: #ffd700;
+    color: #000;
+}
+
+.card-diamond {
+    background: linear-gradient(45deg, #b9f2ff, #e0ffff);
+    color: #000;
+}
+
+.card-hot {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* 已解锁成就样式 */
+.list-group-item.unlocked {
+    background-color: #fff8dc;
+    color: gold;
+}
+
+/* 事件列表样式 */
+#event-list {
+    padding-left: 0;
+}
+
+#event-list .list-group-item {
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+}
+
+/* 替补球员列表容器 */
+#player-list-container, #training-player-list, #youth-player-list, #transfer-player-list, #coach-list, #inbox-list, #achievement-list, #activity-list, #skill-card-list, #player-info-list, #fan-support-list, #financial-management-list, #tournament-system-list {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* 球场替补球员列表 */
+#player-list-container {
+    min-height: 400px;
+}
+
+/* 体力条样式 */
+.stamina-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.stamina-bar-inner {
+    height: 10px;
+    background-color: #76c7c0;
+    width: 100%;
+}
+
+/* 技能卡样式 */
+.skill-card-item {
+    background-color: #6a5acd;
+    color: #fff;
+}
+
+/* 星级技能卡样式 */
+.skill-card-item .stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.skill-card-item .star {
+    color: gold;
+    font-size: 1rem;
+}
+
+/* 新增技能卡星级 */
+.skill-card-item.star-1 .stars .star:nth-child(n+2) {
+    color: #ccc;
+}
+
+.skill-card-item.star-2 .stars .star:nth-child(n+3) {
+    color: #ccc;
+}
+
+.skill-card-item.star-3 .stars .star:nth-child(n+4) {
+    color: #ccc;
+}
+
+.skill-card-item.star-4 .stars .star:nth-child(n+5) {
+    color: #ccc;
+}
+
+/* 新增每周精选卡包按钮样式 */
+#weekly-pack-btn {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    color: #fff;
+}
+
+#weekly-pack-btn:hover {
+    background-color: #ff7f00;
+    border-color: #ff7f00;
+}
+
+/* 新增功能：球队设施升级按钮样式 */
+#upgrade-training-btn, #upgrade-stadium-btn {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    color: #fff;
+}
+
+#upgrade-training-btn:hover, #upgrade-stadium-btn:hover {
+    background-color: #ff7f00;
+    border-color: #ff7f00;
+}
+
+/* 新增功能：球迷系统界面样式 */
+#fan-system {
+    padding: 20px 0;
+}
+
+#fan-system .card {
+    background-color: #f0e68c;
+}
+
+#fan-system .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+#fan-system .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* 新增功能：财务管理界面样式 */
+#financial-management {
+    padding: 20px 0;
+}
+
+#financial-management .card {
+    background-color: #add8e6;
+}
+
+#financial-management .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#financial-management .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* 新增功能：赛事系统界面样式 */
+#tournament-system {
+    padding: 20px 0;
+}
+
+#tournament-system .card {
+    background-color: #dda0dd;
+}
+
+#tournament-system .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#tournament-system .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    #pitch {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    #pitch {
+        height: 300px;
+    }
+
+    /* 调整菜单栏为垂直显示 */
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 球员卡片全宽显示 */
+    .player, .transfer-player, .coach-card, .skill-card-item {
+        width: 100%;
+    }
+}
+
+/* Modal样式调整 */
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+/* 按钮样式调整 */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-warning {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+/* 其他调整 */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item button {
+    margin-left: 10px;
+}
+
+/* 拖拽目标高亮 */
+.droppable.dragover {
+    border-color: #007bff;
+    background-color: #e7f1ff;
+}
+
+/* 新增功能：球队设施升级卡片样式 */
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* 新增功能：赛事系统影响显示 */
+#tournament-system .mt-3 p {
+    font-size: 1rem;
+}
+
+/* 新增功能：球迷支持度影响显示 */
+#fan-system .mt-3 p {
+    font-size: 1rem;
+}
